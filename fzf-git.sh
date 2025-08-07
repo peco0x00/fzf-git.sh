@@ -347,10 +347,10 @@ if [[ -n "${BASH_VERSION:-}" ]]; then
         bind -x '"\C-g'$c'": _fzf_git_list_bindings'
         continue
       fi
-      bind -m emacs-standard '"\C-g\C-'$c'": "\C-u\C-a\C-k`_fzf_git_'$o'`\e\C-e\C-y\C-a\C-y\ey\C-h\C-e\er \C-h"'
+      bind -m emacs-standard '"\C-g\C-'$c'": "\C-u \C-a\C-k`_fzf_git_'$o'`\e\C-e\C-y\C-a\C-y\ey\C-h\C-e\er\C-h"'
       bind -m vi-command     '"\C-g\C-'$c'": "\C-z\C-g\C-'$c'\C-z"'
       bind -m vi-insert      '"\C-g\C-'$c'": "\C-z\C-g\C-'$c'\C-z"'
-      bind -m emacs-standard '"\C-g'$c'":    "\C-u\C-a\C-k`_fzf_git_'$o'`\e\C-e\C-y\C-a\C-y\ey\C-h\C-e\er\C-h"'
+      bind -m emacs-standard '"\C-g'$c'":    "\C-u \C-a\C-k`_fzf_git_'$o'`\e\C-e\C-y\C-a\C-y\ey\C-h\C-e\er\C-h"'
       bind -m vi-command     '"\C-g'$c'":    "\C-z\C-g'$c'\C-z"'
       bind -m vi-insert      '"\C-g'$c'":    "\C-z\C-g'$c'\C-z"'
     done
